@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [11, 10, 2, 93, 96];
+    let num = 0;
+    let num1 = arr.length - 1;
+
+    function checkNum() {
+        while (num < num1) {
+            let temp = arr[num];
+            arr[num] = arr[num1];
+            arr[num1] = temp;
+            num++;
+            num1--;
+        }
+    }
+
+    checkNum();
+    document.write(arr);
+
+    //cach 2
+    let arr1 = [1, 2, 3, 4, 5];
+    function checkValue() {
+        let arr2 = [];
+        for (let j = arr1.length - 1; j >= 0; j--) {
+            arr2 += arr1[j];
+        }
+        return arr2;
+    }
+
+    document.write(checkValue(arr1));
+
+</script>
+</body>
+</html>

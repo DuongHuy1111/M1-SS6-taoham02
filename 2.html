@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Chu Vi <br><input type="text" id="a">
+<input type="button" value="KQ" onclick="chuVi()"><br><br>
+Diện Tích <br><input type="text" id="b">
+<input type="button" value="KQ" onclick="dienTich()">
+<p id="result"></p>
+<script>
+    function chuVi() {
+        let num = parseFloat(document.getElementById("a").value);
+        let sum = num *2 * 3.14;
+        document.getElementById("result").innerHTML = sum;
+        }
+
+    function dienTich() {
+        let num = parseFloat(document.getElementById("b").value);
+        let sum = num * num * 3.14;
+        document.getElementById("result").innerHTML = sum;
+    }
+
+</script>
+</body>
+</html>
